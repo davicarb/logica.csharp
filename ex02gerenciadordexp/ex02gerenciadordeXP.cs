@@ -17,7 +17,7 @@ namespace ex02gerenciadordeXP
       };
       
       bool rodando = true;
-      Console.Clear()
+      Console.Clear();
 
       while (rodando)
       {
