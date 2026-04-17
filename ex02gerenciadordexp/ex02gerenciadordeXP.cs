@@ -15,14 +15,43 @@ namespace ex02gerenciadordeXP
        PontosAtuais = 0,
        PontosParaUparNivel = 100
       };
+      
+      bool rodando = true;
+      Console.Clear();
 
-      int pontosAtuaisArq = Arquitetura.PontosAtuais;
-      Console.WriteLine($"Pontos atuais no módulo de Arquitetura: {pontosAtuaisArq}");
-      Console.WriteLine("O valor de XP necessário para subir de nível no módulo de Arquitetura é de 100.");
+      while (rodando)
+      {
+      Console.WriteLine($"Pontos atuais no módulo de Arquitetura: {Arquitetura.PontosAtuais}");
+      Console.WriteLine($"O valor de XP necessário para subir de nível no módulo de Arquitetura é de {Arquitetura.PontosParaUparNivel}.");
 
       int valorGanho = RecebeValorGanho();
-      AdicionarExperiencia(Arquitetura, valorGanho);
+
+      AdicionarValorGanho(Arquitetura, valorGanho);
+
+      Console.WriteLine("\nRepetir?");
+      Console.WriteLine("1 = s");
+      Console.WriteLine("0 = n\n");
+
+      bool valid = int.TryParse(Console.ReadLine(), out int option);
+
+      while (!valid || (option != 0 && option != 1))
+        {
+          Console.WriteLine("Entrada incorreta.\n");
+          Console.WriteLine("Insira novamente: ");
+          valid = int.TryParse(Console.ReadLine(), out option);
+        }      
       
+      if (option == 1)
+        {
+          rodando = true;
+        }
+      else
+        {
+          rodando = false;
+          break;
+        }
+      }
+
     }
     static int RecebeValorGanho()
     {
@@ -38,10 +67,10 @@ namespace ex02gerenciadordeXP
 
       return valorGanho;
     }
-    static void AdicionarExperiencia(Modulo Arquitetura, int valorGanho)
+    static void AdicionarValorGanho(Modulo Arquitetura, int valorGanho)
     {
-      Arquitetura.PontosAtuais = +valorGanho;
-      int diferencaPontos = Arquitetura.PontosParaUparNivel - valorGanho;
+      Arquitetura.PontosAtuais = Arquitetura.PontosAtuais + valorGanho;
+      int diferencaPontos = Arquitetura.PontosParaUparNivel - Arquitetura.PontosAtuais;
 
       if (Arquitetura.PontosAtuais < 100)
       {
