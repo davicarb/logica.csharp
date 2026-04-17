@@ -1,0 +1,41 @@
+Exercício 2: Gerenciador de Experiência (XP)
+Neste desafio, você não vai passar apenas uma string ou um int, mas sim um objeto inteiro de uma classe que você mesmo vai criar.
+
+1. A Classe
+Crie uma classe chamada Modulo com as seguintes propriedades:
+
+string Nome
+
+int PontosAtuais
+
+int PontosParaUparNivel (o quanto ele precisa para "upar")
+
+
+
+2. O Método (A Lógica)
+Crie um método chamado AdicionarExperiencia.
+
+Argumentos: O objeto Modulo e um int valorGanho.
+
+O que o método deve fazer:
+
+1. Somar o valorGanho aos PontosAtuais do módulo.
+
+2. Verificação de Nível: Se os PontosAtuais ficarem maiores ou iguais ao PontosParaNivel, o método deve:
+
+3. Imprimir: "Parabéns! O módulo [Nome] subiu de nível!"
+
+4. Resetar os PontosAtuais para 0.
+
+5. Proteção: Se o valorGanho for negativo, o método deve apenas avisar: "Valor de XP inválido".
+
+
+
+3. No Main (Execução)
+Instancie (crie) um novo módulo (ex: Nome = "Arquitetura", PontosParaNivel = 100).
+
+Peça para o usuário digitar quanto de XP o aluno ganhou.
+
+Chame o método passando o seu objeto e o valor digitado.
+
+Imprima o status final do objeto para ver se ele mudou de verdade.

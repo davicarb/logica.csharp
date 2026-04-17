@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics.Contracts;
 using System.Net;
 
-namespace exercicios
+namespace ex01validador
 {
 
   class Program
