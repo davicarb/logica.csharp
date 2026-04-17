@@ -1,4 +1,4 @@
-# validador de senhas e cadastro de usuários usando métodos no C# #
+# EX 01 - Validador de senhas e cadastro de usuários usando métodos no C# #
 
 (note que ainda consta problemas relacionados a nullability, pois ainda não aprendi sobre o assunto).
 
