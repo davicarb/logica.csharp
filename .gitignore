@@ -1,0 +1,10 @@
+# Pastas de compilação (Binários e Objetos)
+bin/
+obj/
+
+# Arquivos de configuração do VS Code
+.vscode/
+
+# Arquivos de log e temporários
+*.log
+.DS_Store
