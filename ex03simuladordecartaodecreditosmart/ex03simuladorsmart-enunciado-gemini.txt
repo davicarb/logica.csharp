@@ -1,0 +1,18 @@
+💳 Exercício 3: O Simulador de Cartão de Crédito "Smart"
+
+Imagine que você está criando o sistema de um banco. O cartão tem um limite de crédito, um saldo devedor e um sistema de limite dinâmico.
+
+O Desafio Técnico:
+Proteção de Dados: O SaldoDevedor e o LimiteAtual devem ser private set. Ninguém pode chegar e simplesmente digitar cartao.LimiteAtual = 99999.
+
+O Método RegistrarCompra(double valor): * Se o valor da compra for menor ou igual ao limite disponível, a compra é aprovada e o SaldoDevedor aumenta.
+
+Se for maior, a compra é negada.
+
+A Lógica Intermediária (O "Upgrade"):
+
+Crie um método chamado PagarFatura(double valor Pago).
+
+Sempre que o usuário pagar a fatura total (ou seja, o saldo devedor voltar a zero), o banco dá um "bônus de confiança": o LimiteAtual aumenta automaticamente em 15%.
+
+Se ele pagar apenas uma parte, o saldo devedor diminui, mas o limite não aumenta.
