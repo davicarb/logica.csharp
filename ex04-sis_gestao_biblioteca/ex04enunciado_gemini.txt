@@ -1,0 +1,39 @@
+Ex04: Sistema de Gestão de Biblioteca (Minimalista)
+O objetivo é criar um console app onde você possa cadastrar livros e, ao fechar o programa, os dados fiquem salvos.
+
+1. Requisitos Técnicos
+Classe Livro: Propriedades como Titulo, Autor e IsDisponivel.
+
+Encapsulamento: Use propriedades { get; set; }.
+
+Lista: Use List<Livro> para armazenar os livros na memória.
+
+JSON: Use a biblioteca System.Text.Json para salvar e carregar a lista de um arquivo .json.
+
+2. O Desafio de Lógica
+Crie um menu com:
+
+Cadastrar Livro: Adiciona à lista.
+
+Listar Livros: Mostra o que está na memória.
+
+Salvar e Sair: Serializa a lista para JSON e encerra.
+
+Carregar Dados: Ao iniciar, o programa deve ler o JSON (se existir) e preencher a lista automaticamente.
+
+Estrutura Base (Pra você começar)
+No seu VS Code, você precisará importar:
+
+C#
+using System.Text.Json;
+using System.IO;
+Dica de "Coder de Verdade":
+Para salvar, você usará algo assim:
+
+C#
+string jsonString = JsonSerializer.Serialize(minhaLista);
+
+File.WriteAllText("biblioteca.json", jsonString);
+
+Por que esse exercício é importante agora?
+Sai do "Console.WriteLine" puro: Você começa a interagir com o sistema de arquivos do computador.
