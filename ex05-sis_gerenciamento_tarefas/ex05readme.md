@@ -34,8 +34,8 @@ gado?
 . Como tornar a programação mais abstrata, tornando a manutenção um processo
 mais simples e menos trabalhoso?
 
-. Como separar o programa em métodos, e transitar entre estes métodos utili
-zando uma entrada validada, que não faça com que o sistema caia se o usuário
+. Como separar o programa em métodos, e transitar entre estes métodos utilizando
+uma entrada validada, que não faça com que o sistema caia se o usuário
 digitar algo errado no input?
 
 github: davicarb
