@@ -13,8 +13,8 @@ Utilizei:
 e serializar;
 
 -> List<Tarefa>: que me ajudou a listar as instâncias do tipo Tarefa,
-que são, no caso, as tarefas em si (possuindo propriedades como: des-
-crição, prioriedade e se foi concluída ainda ou não);
+que são, no caso, as tarefas em si (possuindo propriedades como: des
+crição, prioridade e se foi concluída ainda ou não);
 
 * O mais interessante deste exercício foi que, apesar de ainda estar
 trabalhando com as mesmas tecnologias que trabalhei no exercício an-
