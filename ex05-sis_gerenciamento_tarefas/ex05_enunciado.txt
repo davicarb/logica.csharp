@@ -1,0 +1,22 @@
+O Desafio: Sistema de Gerenciamento de Tarefas
+
+Crie um programa de console que permita ao usuário adicionar tarefas e salvá-las em um arquivo chamado tarefas.json.
+
+Requisitos Técnicos
+Classe Tarefa: Deve conter
+
+public string Descricao
+public string Prioridade
+public bool IsConcluida
+public DateTime DataEntrada { get; set; } 
+
+
+Biblioteca: Use o System.Text.Json (padrão do .NET moderno).
+
+Métodos Obrigatórios:
+
+SalvarDados(List<Tarefa> lista): Converte a lista para JSON e grava no arquivo.
+
+CarregarDados(): Lê o arquivo JSON e retorna uma List<Tarefa>.
+
+AdicionarTarefa(List<Tarefa> lista): Interage com o usuário para criar um novo objeto.
