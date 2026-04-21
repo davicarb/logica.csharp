@@ -1,0 +1,46 @@
+📄 EXERCÍCIO: Sistema Bancário "Legacy" (C# + JSON)
+Objetivo: Evoluir a lógica de manipulação de objetos e persistência em JSON, focando em regras de negócio rígidas (proteção de saldo) e histórico de operações.
+
+1. A CLASSE MODELO: ContaBancaria
+
+Sua classe deve representar uma conta real e garantir que o dinheiro seja tratado com segurança.
+
+Propriedades:
+
+Guid Id: Gerado automaticamente no construtor.
+string Titular: Nome do dono da conta.
+double Saldo: Atenção! Use public double Saldo { get; private set; }. O saldo não pode ser alterado de fora da classe, apenas pelos métodos de Depósito e Saque.
+List<string> Historico: Uma lista de frases que registram o que aconteceu (ex: "Depósito de R$100", "Saque de R$50").
+
+2. MÉTODOS DE NEGÓCIO (Lógica)
+Dentro da classe ContaBancaria, implemente:
+void Depositar(double valor):
+Soma o valor ao saldo.
+Adiciona a mensagem ao histórico com a data e hora: [15/10 10:30] Depósito: +R$ {valor}.
+bool Sacar(double valor):
+Regra: Se o valor for maior que o saldo atual, exiba "Saldo Insuficiente" e retorne false.
+Se houver saldo, subtraia o valor e registre no histórico: [15/10 10:35] Saque: -R$ {valor}. Retorne true.
+
+3. O DESAFIO: GERENCIADOR DE CONTAS (Persistência)
+Crie uma classe ou lógica no Program.cs para gerenciar a lista de contas:
+
+Salvar Dados: Use JsonSerializer com WriteIndented = true para salvar a lista de contas em um arquivo banco.json.
+Carregar Dados: Ao iniciar o programa, leia o arquivo. Se ele não existir, inicie uma lista vazia.
+
+Transferência entre Contas:
+O usuário digita o nome do Titular de Origem e o Titular de Destino.
+O programa localiza os dois objetos na lista.
+
+Se o Saque na conta de origem for bem-sucedido (true), o Depósito na conta de destino é realizado automaticamente.
+Salve o JSON imediatamente após a transferência.
+
+4. MENU DE INTERAÇÃO
+
+O programa deve rodar em um loop (while) com as opções:
+
+Criar Conta
+Consultar Saldo/Extrato
+Depositar
+Sacar
+Transferir
+Sair
