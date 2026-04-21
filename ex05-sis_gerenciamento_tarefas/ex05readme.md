@@ -13,29 +13,29 @@ Utilizei:
 e serializar;
 
 -> List<Tarefa>: que me ajudou a listar as instâncias do tipo Tarefa,
-que são, no caso, as tarefas em si (possuindo propriedades como: des-
-crição, prioriedade e se foi concluída ainda ou não);
+que são, no caso, as tarefas em si (possuindo propriedades como: des
+crição, prioridade e se foi concluída ainda ou não);
 
 * O mais interessante deste exercício foi que, apesar de ainda estar
-trabalhando com as mesmas tecnologias que trabalhei no exercício an-
+trabalhando com as mesmas tecnologias que trabalhei no exercício an
 terior, consegui desenvolver mais ainda um dos pilares da POO:
 abstração.
 
 Manti a função main limpa, apenas utilizando o switch case, (com o int
-da opção já validado), para que  o usuário possa navegar entre os mé-
+da opção já validado), para que  o usuário possa navegar entre os mé
 todos que o programa proporciona.
 
-Apesar de ainda se tratar de um programa de console, trabalhei nele con-
+Apesar de ainda se tratar de um programa de console, trabalhei nele con
 ceitos muito importantes no mundo da programação:
 
-. Como fazer com que os dados permaneçam vivos após o computador ser desli-
+. Como fazer com que os dados permaneçam vivos após o computador ser desli
 gado?
 
 . Como tornar a programação mais abstrata, tornando a manutenção um processo
 mais simples e menos trabalhoso?
 
-. Como separar o programa em métodos, e transitar entre estes métodos utili-
-zando uma entrada validada, que não faça com que o sistema caia se o usuário
+. Como separar o programa em métodos, e transitar entre estes métodos utilizando
+uma entrada validada, que não faça com que o sistema caia se o usuário
 digitar algo errado no input?
 
 github: davicarb
