@@ -2,16 +2,22 @@ namespace banco_legacy
 {
   public class ContaBancaria
   {
+    public string Email { get; set; }
+    public string Senha { get; set; }
     public string Titular { get; set; }
     public int IdTitular { get; set; }
     public decimal Saldo { get; private set; }
 
     // public List<string> Historico {get; set;} - desenvolver a lista somente depois
 
-    public ContaBancaria(string nomeTitular, int idDado, decimal saldoConta)
+    public ContaBancaria() { }
+
+    public ContaBancaria(string nomeTitularRecebido, string emailRecebido, string senhaRecebida, int idGerado, decimal saldoConta)
     {
-      Titular = nomeTitular;
-      IdTitular = idDado;
+      Titular = nomeTitularRecebido;
+      Email = emailRecebido;
+      Senha = senhaRecebida;
+      IdTitular = idGerado;
       Saldo = saldoConta;
     }
 
