@@ -8,3 +8,7 @@ obj/
 # Arquivos de log e temporários
 *.log
 .DS_Store
+
+*.db
+*.db-wal
+*.db-shm
