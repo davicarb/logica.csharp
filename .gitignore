@@ -1,6 +1,6 @@
 # Pastas de compilação (Binários e Objetos)
-bin/
-obj/
+**/bin/
+**/obj/
 
 # Arquivos de configuração do VS Code
 .vscode/

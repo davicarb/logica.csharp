@@ -2,6 +2,7 @@
 ## para manipulação dos dados, foi utilizado ado.net
 
 * neste exercício pratiquei, pela primeira vez, o CRUD básico do SQL (neste caso, SQLite):
+
 - Create;
 - Read;
 - Use;
